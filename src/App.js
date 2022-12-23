@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { Footer, Header } from './components';
+import { Header } from './components';
 import { Followers, Home, Repositories } from './pages';
 
 function App() {
@@ -11,7 +11,6 @@ function App() {
 				<Route path='/repositories' element={<Repositories />} />
 				<Route path='/follower' element={<Followers />} />
 			</Routes>
-			<Footer />
 		</div>
 	);
 }

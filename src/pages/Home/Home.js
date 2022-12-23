@@ -1,4 +1,4 @@
-import { User } from '../../components';
+import { Footer, User } from '../../components';
 import './home.scss';
 import { useContext } from 'react';
 import { UrlContext } from '../../context/UrlContext';
@@ -21,9 +21,14 @@ export const Home = () => {
 					<ul className='card-list'>
 						{data.map((item) => (
 							<li key={item.id} className='card-item'>
+								{console.log(item)}
 								<div className='d-flex justify-content-between'>
-									<p className='pt-2 px-2 text-info'>{item.name}</p>
-									<p className='px-2 py-1 mt-2 me-2'>{item.visibility}</p>
+									<a href={item.html_url}>
+										<p className='pt-2 px-2 text-info'>{item.name}</p>
+									</a>
+									<p className='card-item__subtitle mt-2 me-2'>
+										{item.visibility}
+									</p>
 								</div>
 								<p className='mx-3 mt-4'>{item.language}</p>
 							</li>
@@ -31,6 +36,7 @@ export const Home = () => {
 					</ul>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

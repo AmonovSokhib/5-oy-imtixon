@@ -1,4 +1,4 @@
-import { User } from '../../components';
+import { Footer, User } from '../../components';
 import './repositories.scss';
 import { useContext } from 'react';
 import { UrlContext } from '../../context/UrlContext';
@@ -17,7 +17,9 @@ export const Repositories = () => {
 							<li key={item.id} className=''>
 								<hr />
 								<div className='d-flex'>
-									<h5 className='text-info me-3'>{item.name}</h5>
+									<a href={item.html_url}>
+										<h5 className='text-info me-3'>{item.name}</h5>
+									</a>
 									<p className='public'>{item.visibility}</p>
 								</div>
 								<div className='d-flex'>
@@ -30,6 +32,7 @@ export const Repositories = () => {
 					</ul>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

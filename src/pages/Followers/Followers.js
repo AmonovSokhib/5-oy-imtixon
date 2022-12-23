@@ -1,4 +1,4 @@
-import { User } from '../../components';
+import { Footer, User } from '../../components';
 import './followers.scss';
 import { useContext } from 'react';
 import { UrlContext } from '../../context/UrlContext';
@@ -35,6 +35,7 @@ export const Followers = () => {
 					</ul>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

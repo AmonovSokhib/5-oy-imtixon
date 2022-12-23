@@ -32,6 +32,15 @@ export const Navbar = () => {
 							<span className='repo-num'>{state.public_repos}</span>
 						</NavLink>
 					</li>
+					<li className='navbar-list__item'>
+						<NavLink>Project</NavLink>
+					</li>
+					<li className='navbar-list__item'>
+						<NavLink>Packages</NavLink>
+					</li>
+					<li className='navbar-list__item'>
+						<NavLink>Stars</NavLink>
+					</li>
 				</ul>
 				<div className='line'></div>
 			</div>

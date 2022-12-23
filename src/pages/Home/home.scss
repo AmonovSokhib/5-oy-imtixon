@@ -1,5 +1,5 @@
 .card-item {
-	width: 390px;
+	width: 440px;
 	height: 120px;
 	border-radius: 5px;
 	border: 1px solid rgb(181, 180, 180);
@@ -17,8 +17,9 @@
 	margin-top: 90px;
 	min-width: 800px;
 }
-.py-1 {
+.card-item__subtitle {
 	border: 1px solid #777;
 	border-radius: 30px;
 	color: #777;
+	padding: 0px 5px;
 }
