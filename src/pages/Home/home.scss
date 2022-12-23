@@ -1,0 +1,24 @@
+.card-item {
+	width: 390px;
+	height: 120px;
+	border-radius: 5px;
+	border: 1px solid rgb(181, 180, 180);
+	margin-bottom: 20px;
+}
+.card-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	list-style-type: none;
+	padding: 0;
+}
+.repositories {
+	margin-top: 90px;
+	min-width: 800px;
+}
+.py-1 {
+	border: 1px solid #777;
+	border-radius: 30px;
+	color: #777;
+}

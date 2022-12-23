@@ -1,0 +1,18 @@
+.avatar-user {
+	border: 2px solid #777;
+	border-radius: 50%;
+	margin-top: 50px;
+}
+.user-follower {
+	display: flex;
+	margin-top: 20px;
+	& > a {
+		text-decoration: none;
+		color: black;
+	}
+}
+.edit-profil {
+	width: 350px;
+	border-radius: 5px;
+	border: 1px solid #777;
+}
