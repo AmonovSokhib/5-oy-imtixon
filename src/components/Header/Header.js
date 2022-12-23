@@ -30,10 +30,10 @@ export const Header = () => {
 						</ul>
 					</div>
 					<div className='d-flex'>
-						<div>
+						<div className='mt-1'>
 							<img src={Notification} alt='an img' />
 						</div>
-						<div className='mx-2'>
+						<div className='mx-3 '>
 							<span className='text-white  fs-4'>
 								+
 								<img

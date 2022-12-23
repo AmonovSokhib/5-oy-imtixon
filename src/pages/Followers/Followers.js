@@ -8,7 +8,7 @@ export const Followers = () => {
 
 	return (
 		<div className='container'>
-			<div className='d-flex  '>
+			<div className='d-flex'>
 				<div className='me-3'>
 					<User />
 				</div>
@@ -25,9 +25,11 @@ export const Followers = () => {
 											src={e.avatar_url}
 											alt='an img'
 										/>
-										<p className='mt-1 ms-4'>{e.login}</p>
+										<a href={e.html_url} className='mt-2 ms-4 user-name'>
+											{e.login}
+										</a>
 									</div>
-									<button className='follow-btn'>follow</button>
+									<button className='follow-btn'>Follow</button>
 								</div>
 								<hr />
 							</li>

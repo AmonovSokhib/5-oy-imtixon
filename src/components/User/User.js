@@ -10,16 +10,16 @@ export const User = () => {
 		<div className='user-card'>
 			<img
 				className='avatar-user'
-				width={352}
-				height={352}
+				width={350}
+				height={350}
 				src={state.avatar_url}
 				alt='an img'
 			/>
-			<h2 className='name'>{state.name}</h2>
+			<h2 className='name mb-2'>{state.name}</h2>
 			<p className='user-name'>{state.login}</p>
 			<button className='edit-profil'>Edit profile</button>
 			<div className='user-follower'>
-				<Link to={'/follower'} className='d-flex '>
+				<Link to={'/follower'} className='d-flex follow'>
 					<img
 						className='mt-1'
 						width={16}
@@ -30,8 +30,8 @@ export const User = () => {
 					<span className='mx-1'>{state.followers}</span>
 					<p>follower</p>
 				</Link>
-				<div>.</div>
-				<Link className='d-flex '>
+
+				<Link className='d-flex follow'>
 					<span className='mx-1'>{state.following}</span>
 					<p>following</p>
 				</Link>

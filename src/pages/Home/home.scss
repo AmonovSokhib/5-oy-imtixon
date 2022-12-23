@@ -1,9 +1,9 @@
 .card-item {
-	width: 440px;
-	height: 120px;
+	width: 445px;
+	height: 110px;
 	border-radius: 5px;
 	border: 1px solid rgb(181, 180, 180);
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 .card-list {
 	display: flex;
@@ -13,13 +13,39 @@
 	list-style-type: none;
 	padding: 0;
 }
-.repositories {
-	margin-top: 90px;
-	min-width: 800px;
-}
+
 .card-item__subtitle {
 	border: 1px solid #777;
 	border-radius: 30px;
 	color: #777;
 	padding: 0px 5px;
+	font-size: 12px;
+	font-weight: 500;
+	margin-right: 15px;
+	margin-top: 20px;
+}
+.customise {
+	margin: 0;
+	font-size: 12px;
+	color: #666;
+}
+.popular {
+	margin-bottom: 5px;
+	font-size: 16px;
+	color: #444;
+}
+.item-name {
+	margin-top: 20px;
+	margin-left: 15px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.item-name:hover {
+	text-decoration: underline;
+}
+.language-item {
+	margin-top: 6px;
+	margin-left: 15px;
+	font-size: 16px;
 }
